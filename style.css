@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #253B49;
+}
+
+a{
+    text-decoration: none;
+}
+img:focus, img:hover{
+    animation-name: shake;
+    animation-duration: .2s;
+    display: block;
+    position: absolute;
+    animation-iteration-count: infinite;
+    padding: 0px;
+    margin:auto;
+    border: 10px;
+}
+
+@keyframes shake{
+0%{transform: rotate(5deg);}
+50%{transform: rotate(-5deg);}
+100%{transform: rotate(5deg);}
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-5%;
+    animation-name:breath;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes breath{
+    0%{color:#253B49; text-decoration: none;}
+    15%{color:white;}
+    15.5%{color:#253B49;}
+    17%{color: #FFFFFF;}
+    95%{color: white;}
+    100%{color: #253B49; text-decoration: none;}}
+
+
+.bgd1{
+    width: 90%;
+    height: 100px;
+    left: 5%;
+    overflow: hidden;
+    position: absolute;
+    border: 1px transparent;
+    box-shadow: 15px;
+    top: 17.5%;
+}
+.ingra{
+    background-image: linear-gradient(to left,#38367D,#CC6155,#F5CB62,#7BCABB, #165F99);
+    height: 300%;
+    width: 300%;
+    position: absolute;
+    left:5%;
+    top:15%;
+    animation-name: gra;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gra {
+    0% { left: -200%; top: -200%;}
+    50% { left: 0%; top: 0%; }
+    100% { left: -200%; top: -200%; }
+}
+
+.bgd2{
+
+    width: 90%;
+    height: 100px;
+    left: 5%;
+    overflow: hidden;
+    position: absolute;
+    border: 1px transparent;
+    box-shadow: 15px;
+    top: 42.5%;
+    background-color: #7BCABB;
+    animation-name: glow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow{
+    33%{background-color: #F5CB62;}
+    66%{background-color: white;}
+    100%{background-color: #7BCABB;}
+
+}
+.finn{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 25%;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.guy{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 25%;   
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+.thomas{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 25%;   
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+
+.walt{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 50%;   
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.boxer{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 75%;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.link{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 75%;   
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+
+.mega{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 75%;   
+    left: 15%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.top{
+    height: 100px;
+    width:100px;
+    position: absolute;
+    top: 50%;   
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+mega:hover::before{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
